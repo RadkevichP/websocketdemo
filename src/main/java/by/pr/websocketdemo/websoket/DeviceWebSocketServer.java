@@ -2,6 +2,7 @@ package by.pr.websocketdemo.websoket;
 
 import by.pr.websocketdemo.model.Device;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.json.Json;
 import javax.json.JsonObject;
@@ -12,6 +13,7 @@ import java.io.StringReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@ApplicationScoped
 @ServerEndpoint("/actions")
 public class DeviceWebSocketServer {
 
